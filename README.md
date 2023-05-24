@@ -36,18 +36,18 @@ public class Token {
 * Rebuild the program using `./gradlew build` or functionality in your IDE.
 
 ## Functionality
-<strong>/play</strong> (song name/ url here) <br> 
+### <strong>/play</strong> (song name/ url here) <br> 
 * Will either access the URL and play the song, or will search Youtube for the top result of the entered keywords and play that.
 * If something else is already playing, it will add the song to a queue to be played after the current song finishes or is skipped. <br>
-<strong>/queue</strong> <br>
+### <strong>/queue</strong> <br>
 * Returns the names of all songs currently in the queue. <br>
-<strong>/nowplaying</strong> <br>
+### <strong>/nowplaying</strong> <br>
 * Returns the name, author and URL of the song currently being played. <br>
-<strong>/skip</strong> <br>
+### <strong>/skip</strong> <br>
 * Skips the currently playing song, either playing the next song in the queue or stopping play if there is nothing else in the queue. <br>
-<strong>/repeat</strong> <br>
+### <strong>/repeat</strong> <br>
 * A toggle (set to false by default) which repeats a song once its finished. <br>
-<strong>/stop</strong> <br>
+### <strong>/stop</strong> <br>
 * Stops songs playing and clears queue. <br>
 
 ### Known issues
