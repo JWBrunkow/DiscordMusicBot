@@ -27,7 +27,7 @@ public class AudioForwarder implements AudioSendHandler {
         boolean canProvide = player.provide(frame);
         if(!canProvide) {
             time += 20;
-            if(time >= 300000) {
+            if(time >= 1000) {
                 time = 0;
                 guild.getAudioManager().closeAudioConnection();
             }

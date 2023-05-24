@@ -8,7 +8,6 @@ import net.dv8tion.jda.api.entities.GuildVoiceState;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.build.OptionData;
-
 import java.util.List;
 import java.util.Objects;
 
@@ -56,6 +55,7 @@ public class Stop implements ICommand {
         TrackScheduler trackScheduler = guildMusicManager.getTrackScheduler();
         trackScheduler.getQueue().clear();
         trackScheduler.getPlayer().stopTrack();
+        event.getGuild().getAudioManager().closeAudioConnection();
         event.reply("Music Stopped").queue();
     }
 }
